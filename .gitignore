@@ -1,0 +1,29 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of the go tool
+/_obj/
+/_test/
+/vendor/
+
+# Generated files
+*.log
+
+# IDE directories
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Coverage files
+coverage.out
+
+# Build directories
+bin/
+build/
