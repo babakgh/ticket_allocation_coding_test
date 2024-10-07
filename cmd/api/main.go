@@ -25,12 +25,14 @@ func main() {
 		log.Fatalf("Failed to load config: %v", err)
 	}
 
-	log.Println("Starting the server...")
+	// Run the application
 	run(cfg)
 
+	// If it's here then the server has been stopped gracefully
 	log.Println("Server gracefully stopped")
 }
 
+// TODO: Too many lines, we can refactor this function.
 func run(cfg *config.Config) {
 	application, err := app.New(cfg)
 	if err != nil {
@@ -38,7 +40,7 @@ func run(cfg *config.Config) {
 	}
 	defer application.Close()
 
-	// Start the server
+	log.Println("Starting the server...")
 	if err := application.Start(); err != nil {
 		log.Fatalf("Failed to start app: %v", err)
 	}
