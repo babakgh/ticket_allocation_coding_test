@@ -46,7 +46,7 @@ To run the integration tests, follow these steps:
 
 2. Run the integration test script:
    ```
-   ./tests/simple_integration_tests.sh
+   ./tests/simple_integration_test.sh
    ```
 
 ## API Endpoints
